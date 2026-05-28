@@ -1,23 +1,19 @@
-[README.md](https://github.com/user-attachments/files/28334659/README.md)
-# VN Technical Market Scanner
+# VN30 Futures Tracker
 
-Bản build theo brief tracking tín hiệu kỹ thuật.
+Bản chỉ tracking phái sinh VN30.
 
 ## Có gì
 
-- MA5/10/20/50/100/200
+- VN30 / VNINDEX trạng thái xu hướng
+- VN30F1M, VN30F2M, VN30F1Q, VN30F2Q
+- Basis và Basis %
+- MA10 / MA20 / MA50
 - RSI14
-- MACD / Signal / Histogram
-- Volume MA20 / Volume Ratio
-- High/Low 20 và 50 phiên
-- Relative Strength 20/60/120 so với VNINDEX/VN30
-- Distance MA20
-- ATR14
-- Breakout / False breakout / Breakdown
-- Accumulation / Pullback / Reclaim MA / Overextended / Avoid
-- Rating A+ đến D
-- Hỗ trợ / kháng cự gần
-- Alert message
+- MACD
+- Volume ratio
+- Bias: CANH LONG / CANH SHORT / THEO DÕI / NO TRADE
+- Levels: hỗ trợ, kháng cự, breakout, short trigger
+- Kế hoạch Long/Short, stop, target, position sizing
 
 ## File
 
@@ -29,10 +25,6 @@ requirements.txt
 .github/workflows/update-data.yml
 ```
 
-## Cách dùng
+## Lưu ý
 
-Upload đè vào repo hiện tại, giữ `VNSTOCK_API_KEY`, chạy:
-
-```txt
-Actions → Update technical scanner → Run workflow
-```
+Daily data chỉ dùng để xác định bias chính. Vào lệnh phái sinh bắt buộc xác nhận bằng chart intraday 5m/15m, có stop-loss và không gồng lỗ.
