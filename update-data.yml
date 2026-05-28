@@ -1,0 +1,40 @@
+name: Update technical scanner
+
+on:
+  schedule:
+    - cron: "30 1 * * 1-5"   # 08:30 VN
+    - cron: "30 3 * * 1-5"   # 10:30 VN
+    - cron: "30 4 * * 1-5"   # 11:30 VN
+    - cron: "30 7 * * 1-5"   # 14:30 VN
+    - cron: "30 8 * * 1-5"   # 15:30 VN
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Update technical scanner data
+        env:
+          VNSTOCK_API_KEY: ${{ secrets.VNSTOCK_API_KEY }}
+          VNSTOCK_INTERACTIVE: "0"
+          VNSTOCK_LANGUAGE: "2"
+        run: python update_data.py
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data.json
+          git commit -m "Update technical market scanner" || echo "No changes to commit"
+          git push
