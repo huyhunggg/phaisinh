@@ -1,4 +1,4 @@
-name: Update technical scanner
+name: Update futures tracker
 
 on:
   schedule:
@@ -15,7 +15,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update technical scanner data
+      - name: Update futures tracker data
         env:
           VNSTOCK_API_KEY: ${{ secrets.VNSTOCK_API_KEY }}
           VNSTOCK_INTERACTIVE: "0"
@@ -41,5 +41,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data.json
-          git commit -m "Update technical market scanner" || echo "No changes to commit"
+          git commit -m "Update VN30 futures tracker" || echo "No changes to commit"
           git push
