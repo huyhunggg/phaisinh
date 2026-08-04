@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-08-04 13:09:20 VN",
+    "updated_at": "2026-08-04 14:14:25 VN",
     "source": "Vnstock VN30 Futures Tracker",
     "success": 4,
     "note": "Tracking phái sinh VN30 only. Daily bias, cần xác nhận intraday 5m/15m.",
@@ -11,34 +11,34 @@
   "market": {
     "vn30": {
       "symbol": "VN30",
-      "close": 1917.37,
+      "close": 1921.23,
       "trendState": "UPTREND",
-      "rsi14": 50.2,
+      "rsi14": 50.76,
       "macdState": "MACD+",
-      "ma20": 1898.76,
-      "ma50": 1949.26,
-      "ret5": 5.1,
-      "ret20": -3.94
+      "ma20": 1898.95,
+      "ma50": 1949.34,
+      "ret5": 5.31,
+      "ret20": -3.74
     },
     "vnindex": {
       "symbol": "VNINDEX",
-      "close": 1767.85,
+      "close": 1771.53,
       "trendState": "UPTREND",
-      "rsi14": 47.87,
+      "rsi14": 48.44,
       "macdState": "MACD+",
-      "ma20": 1754.86,
-      "ma50": 1804.95,
-      "ret5": 5.19,
-      "ret20": -4.35
+      "ma20": 1755.05,
+      "ma50": 1805.03,
+      "ret5": 5.41,
+      "ret20": -4.15
     }
   },
   "contracts": [
     {
       "symbol": "VN30F1M",
       "contractName": "VN30F1M - Hợp đồng tương lai VN30",
-      "close": 1919.5,
-      "basis": 2.13,
-      "basisPct": 0.11,
+      "close": 1918.4,
+      "basis": -2.83,
+      "basisPct": -0.15,
       "score": 67,
       "bias": "THEO DÕI",
       "rating": "B",
@@ -47,10 +47,10 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": false,
-        "rsi14": 49.93,
+        "rsi14": 49.73,
         "macd_positive": true,
-        "volume_ratio": 0.82,
-        "basis_positive": true,
+        "volume_ratio": 1.12,
+        "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
         "short_setup": false,
@@ -79,15 +79,15 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F1M: THEO DÕI, score 67. Basis 2.13 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F1M: THEO DÕI, score 67. Basis -2.83 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     },
     {
       "symbol": "VN30F2M",
       "contractName": "VN30F2M - Hợp đồng tương lai VN30",
-      "close": 1919.5,
-      "basis": 2.13,
-      "basisPct": 0.11,
-      "score": 67,
+      "close": 1915.7,
+      "basis": -5.53,
+      "basisPct": -0.29,
+      "score": 63,
       "bias": "THEO DÕI",
       "rating": "B",
       "trendState": "SIDEWAY",
@@ -95,19 +95,19 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": false,
-        "rsi14": 49.01,
+        "rsi14": 48.29,
         "macd_positive": true,
-        "volume_ratio": 0.51,
-        "basis_positive": true,
+        "volume_ratio": 0.6,
+        "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
         "short_setup": false,
-        "no_trade": false
+        "no_trade": true
       },
       "subscores": {
         "trend": 15,
         "momentum": 15,
-        "basis": 14,
+        "basis": 10,
         "volume": 8,
         "risk": 15
       },
@@ -118,7 +118,9 @@
         "breakout_level": 2003.4,
         "short_trigger": 1796.4
       },
-      "alerts": [],
+      "alerts": [
+        "[NO TRADE] VN30F2M chưa có lợi thế rõ."
+      ],
       "tradingPlan": {
         "longSetup": "Long khi F1M giữ trên MA20/MA10, MACD tích cực, VN30 không mất hỗ trợ và basis không quá dương.",
         "shortSetup": "Short khi F1M thủng hỗ trợ/MA20, MACD cắt xuống và VN30 suy yếu đồng thuận.",
@@ -127,15 +129,15 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F2M: THEO DÕI, score 67. Basis 2.13 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F2M: THEO DÕI, score 63. Basis -5.53 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     },
     {
       "symbol": "VN30F1Q",
       "contractName": "VN30F1Q - Hợp đồng tương lai VN30",
-      "close": 1919.5,
-      "basis": 2.13,
-      "basisPct": 0.11,
-      "score": 67,
+      "close": 1915.7,
+      "basis": -5.53,
+      "basisPct": -0.29,
+      "score": 63,
       "bias": "THEO DÕI",
       "rating": "B",
       "trendState": "SIDEWAY",
@@ -143,19 +145,19 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": false,
-        "rsi14": 49.01,
+        "rsi14": 48.29,
         "macd_positive": true,
-        "volume_ratio": 0.51,
-        "basis_positive": true,
+        "volume_ratio": 0.6,
+        "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
         "short_setup": false,
-        "no_trade": false
+        "no_trade": true
       },
       "subscores": {
         "trend": 15,
         "momentum": 15,
-        "basis": 14,
+        "basis": 10,
         "volume": 8,
         "risk": 15
       },
@@ -166,7 +168,9 @@
         "breakout_level": 2003.4,
         "short_trigger": 1796.4
       },
-      "alerts": [],
+      "alerts": [
+        "[NO TRADE] VN30F1Q chưa có lợi thế rõ."
+      ],
       "tradingPlan": {
         "longSetup": "Long khi F1M giữ trên MA20/MA10, MACD tích cực, VN30 không mất hỗ trợ và basis không quá dương.",
         "shortSetup": "Short khi F1M thủng hỗ trợ/MA20, MACD cắt xuống và VN30 suy yếu đồng thuận.",
@@ -175,15 +179,15 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F1Q: THEO DÕI, score 67. Basis 2.13 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F1Q: THEO DÕI, score 63. Basis -5.53 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     },
     {
       "symbol": "VN30F2Q",
       "contractName": "VN30F2Q - Hợp đồng tương lai VN30",
-      "close": 1918.2,
-      "basis": 0.83,
-      "basisPct": 0.04,
-      "score": 67,
+      "close": 1917.2,
+      "basis": -4.03,
+      "basisPct": -0.21,
+      "score": 63,
       "bias": "THEO DÕI",
       "rating": "B",
       "trendState": "SIDEWAY",
@@ -191,19 +195,19 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": false,
-        "rsi14": 50.84,
+        "rsi14": 50.68,
         "macd_positive": true,
-        "volume_ratio": 0.71,
-        "basis_positive": true,
+        "volume_ratio": 0.88,
+        "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
         "short_setup": false,
-        "no_trade": false
+        "no_trade": true
       },
       "subscores": {
         "trend": 15,
         "momentum": 15,
-        "basis": 14,
+        "basis": 10,
         "volume": 8,
         "risk": 15
       },
@@ -214,7 +218,9 @@
         "breakout_level": 1995.8,
         "short_trigger": 1793.0
       },
-      "alerts": [],
+      "alerts": [
+        "[NO TRADE] VN30F2Q chưa có lợi thế rõ."
+      ],
       "tradingPlan": {
         "longSetup": "Long khi F1M giữ trên MA20/MA10, MACD tích cực, VN30 không mất hỗ trợ và basis không quá dương.",
         "shortSetup": "Short khi F1M thủng hỗ trợ/MA20, MACD cắt xuống và VN30 suy yếu đồng thuận.",
@@ -223,7 +229,7 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F2Q: THEO DÕI, score 67. Basis 0.83 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F2Q: THEO DÕI, score 63. Basis -4.03 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     }
   ]
 }
