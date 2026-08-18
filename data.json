@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-08-18 15:02:13 VN",
+    "updated_at": "2026-08-18 16:00:52 VN",
     "source": "Vnstock VN30 Futures Tracker",
     "success": 4,
     "note": "Tracking phái sinh VN30 only. Daily bias, cần xác nhận intraday 5m/15m.",
@@ -47,9 +47,9 @@
       "signals": {
         "above_ma20": false,
         "above_ma50": false,
-        "rsi14": 59.39,
+        "rsi14": 54.2,
         "macd_positive": true,
-        "volume_ratio": 7.18,
+        "volume_ratio": 7.25,
         "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
@@ -97,9 +97,9 @@
       "signals": {
         "above_ma20": false,
         "above_ma50": false,
-        "rsi14": 59.39,
+        "rsi14": 54.2,
         "macd_positive": true,
-        "volume_ratio": 7.18,
+        "volume_ratio": 7.25,
         "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
@@ -147,9 +147,9 @@
       "signals": {
         "above_ma20": false,
         "above_ma50": false,
-        "rsi14": 59.49,
+        "rsi14": 54.49,
         "macd_positive": true,
-        "volume_ratio": 1.0,
+        "volume_ratio": 1.01,
         "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
@@ -197,9 +197,9 @@
       "signals": {
         "above_ma20": false,
         "above_ma50": false,
-        "rsi14": 53.56,
+        "rsi14": 59.44,
         "macd_positive": true,
-        "volume_ratio": 1.17,
+        "volume_ratio": 1.18,
         "basis_positive": false,
         "basis_overheated": false,
         "long_setup": false,
