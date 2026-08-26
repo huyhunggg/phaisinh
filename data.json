@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-08-26 12:06:22 VN",
+    "updated_at": "2026-08-26 15:06:39 VN",
     "source": "Vnstock VN30 Futures Tracker",
     "success": 3,
     "note": "Tracking phái sinh VN30 only. Daily bias, cần xác nhận intraday 5m/15m.",
@@ -12,35 +12,35 @@
   "market": {
     "vn30": {
       "symbol": "VN30",
-      "close": 1940.4,
+      "close": 1970.01,
       "trendState": "UPTREND",
-      "rsi14": 60.58,
+      "rsi14": 66.2,
       "macdState": "MACD+",
-      "ma20": 1908.37,
-      "ma50": 1929.81,
-      "ret5": 3.45,
-      "ret20": 4.94
+      "ma20": 1909.85,
+      "ma50": 1930.4,
+      "ret5": 5.03,
+      "ret20": 6.54
     },
     "vnindex": {
       "symbol": "VNINDEX",
-      "close": 1795.63,
+      "close": 1821.32,
       "trendState": "UPTREND",
-      "rsi14": 58.59,
+      "rsi14": 63.77,
       "macdState": "MACD+",
-      "ma20": 1761.61,
-      "ma50": 1786.31,
-      "ret5": 3.99,
-      "ret20": 5.34
+      "ma20": 1762.9,
+      "ma50": 1786.83,
+      "ret5": 5.48,
+      "ret20": 6.84
     }
   },
   "contracts": [
     {
       "symbol": "VN30F1M",
       "contractName": "VN30F1M - Hợp đồng tương lai VN30",
-      "close": 1942.0,
-      "basis": 1.6,
-      "basisPct": 0.08,
-      "score": 84,
+      "close": 1976.5,
+      "basis": 6.49,
+      "basisPct": 0.33,
+      "score": 74,
       "bias": "CANH LONG",
       "rating": "A",
       "trendState": "UPTREND",
@@ -48,9 +48,9 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": true,
-        "rsi14": 60.28,
+        "rsi14": 66.07,
         "macd_positive": true,
-        "volume_ratio": 2.79,
+        "volume_ratio": 4.79,
         "basis_positive": true,
         "basis_overheated": false,
         "long_setup": true,
@@ -59,16 +59,16 @@
       },
       "subscores": {
         "trend": 22,
-        "momentum": 18,
-        "basis": 14,
+        "momentum": 15,
+        "basis": 10,
         "volume": 15,
-        "risk": 15
+        "risk": 12
       },
       "levels": {
         "support_near": 1847.3,
         "support_key": 1796.4,
-        "resistance_near": 1958.5,
-        "breakout_level": 1958.5,
+        "resistance_near": 1976.5,
+        "breakout_level": 1976.5,
         "short_trigger": 1847.3
       },
       "alerts": [
@@ -82,15 +82,15 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F1M: CANH LONG, score 84. Basis 1.6 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F1M: CANH LONG, score 74. Basis 6.49 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     },
     {
       "symbol": "VN30F1Q",
       "contractName": "VN30F1Q - Hợp đồng tương lai VN30",
-      "close": 1942.0,
-      "basis": 1.6,
-      "basisPct": 0.08,
-      "score": 84,
+      "close": 1976.5,
+      "basis": 6.49,
+      "basisPct": 0.33,
+      "score": 74,
       "bias": "CANH LONG",
       "rating": "A",
       "trendState": "UPTREND",
@@ -98,9 +98,9 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": true,
-        "rsi14": 60.28,
+        "rsi14": 66.07,
         "macd_positive": true,
-        "volume_ratio": 2.79,
+        "volume_ratio": 4.79,
         "basis_positive": true,
         "basis_overheated": false,
         "long_setup": true,
@@ -109,16 +109,16 @@
       },
       "subscores": {
         "trend": 22,
-        "momentum": 18,
-        "basis": 14,
+        "momentum": 15,
+        "basis": 10,
         "volume": 15,
-        "risk": 15
+        "risk": 12
       },
       "levels": {
         "support_near": 1847.3,
         "support_key": 1796.4,
-        "resistance_near": 1958.5,
-        "breakout_level": 1958.5,
+        "resistance_near": 1976.5,
+        "breakout_level": 1976.5,
         "short_trigger": 1847.3
       },
       "alerts": [
@@ -132,14 +132,14 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F1Q: CANH LONG, score 84. Basis 1.6 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F1Q: CANH LONG, score 74. Basis 6.49 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     },
     {
       "symbol": "VN30F2Q",
       "contractName": "VN30F2Q - Hợp đồng tương lai VN30",
-      "close": 1933.0,
-      "basis": -7.4,
-      "basisPct": -0.38,
+      "close": 1972.4,
+      "basis": 2.39,
+      "basisPct": 0.12,
       "score": 71,
       "bias": "THEO DÕI",
       "rating": "B",
@@ -148,10 +148,10 @@
       "signals": {
         "above_ma20": true,
         "above_ma50": true,
-        "rsi14": 59.04,
+        "rsi14": 67.02,
         "macd_positive": true,
-        "volume_ratio": 0.17,
-        "basis_positive": false,
+        "volume_ratio": 0.4,
+        "basis_positive": true,
         "basis_overheated": false,
         "long_setup": false,
         "short_setup": false,
@@ -159,16 +159,16 @@
       },
       "subscores": {
         "trend": 22,
-        "momentum": 16,
-        "basis": 10,
+        "momentum": 15,
+        "basis": 14,
         "volume": 8,
-        "risk": 15
+        "risk": 12
       },
       "levels": {
         "support_near": 1776.0,
         "support_key": 1776.0,
-        "resistance_near": 1953.6,
-        "breakout_level": 1953.6,
+        "resistance_near": 1972.5,
+        "breakout_level": 1972.5,
         "short_trigger": 1776.0
       },
       "alerts": [],
@@ -180,7 +180,7 @@
         "takeProfit": "TP1 6–8 điểm; TP2 10–15 điểm; đạt TP1 kéo stop về hòa vốn.",
         "positionSizing": "Lệnh thăm dò 20–30%; chỉ tăng khi đúng hướng và VN30 xác nhận."
       },
-      "comment": "VN30F2Q: THEO DÕI, score 71. Basis -7.4 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
+      "comment": "VN30F2Q: THEO DÕI, score 71. Basis 2.39 điểm. Daily chỉ dùng xác định hướng chính; điểm vào cần chart 5m/15m."
     }
   ]
 }
