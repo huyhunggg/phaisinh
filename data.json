@@ -1,12 +1,12 @@
 {
   "meta": {
-    "updated_at": "2026-08-29 03:16:48 VN",
+    "updated_at": "2026-08-31 14:07:40 VN",
     "source": "Vnstock VN30 Futures Tracker",
     "success": 3,
     "note": "Tracking phái sinh VN30 only. Daily bias, cần xác nhận intraday 5m/15m.",
     "errors": {
       "VN30INDEX": "Quote/VCI: ValueError: Invalid derivative or bond symbol. Symbol must be in format of VN30F1M, VN30F2024, GB10F2024, or for company bonds, e.g., BAB122032 | Quote/KBS: ValueError: Invalid derivative or bond symbol. Symbol must be in format of VN30F1M, VN30F2024, GB10F2024, or for company bonds, e.g., BAB122032 | Vnstock/VCI: ValueError: Invalid derivative or bond symbol. Symbol must be in format of VN30F1M, VN30F2024, GB10F2024, or for company bonds, e.g., BAB122032 | Vnstock/KBS: ValueError: Invalid derivative or bond symbol. Symbol must be in format of VN30F1M, VN30F2024, GB10F2024, or for company bonds, e.g., BAB122032",
-      "VN30F2M": "Quote/VCI: too few rows 6 | Quote/KBS: too few rows 6 | Vnstock/VCI: too few rows 6 | Vnstock/KBS: too few rows 6"
+      "VN30F2M": "Quote/VCI: too few rows 6 | Quote/KBS: too few rows 7 | Vnstock/VCI: too few rows 6 | Vnstock/KBS: too few rows 7"
     }
   },
   "market": {
